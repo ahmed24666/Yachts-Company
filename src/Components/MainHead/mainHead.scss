@@ -1,0 +1,53 @@
+.MainHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    .trans{
+        position: absolute;
+        font-size: 60px;
+        top: 160px;
+        color: var(--txt);
+        @media (max-width:767px) {
+            font-size: 40px;
+            top: 190px;
+        }
+        @media (max-width:400px) {
+            font-size: 35px;
+            top: 195px;
+        }
+    }
+    .text{  
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        gap: 20px;
+        @media (max-width:767px) {
+            width: 90%;
+        }
+        h6{
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+        }
+        h1{
+            letter-spacing: 3px;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 48px;
+        }
+        p{
+            line-height: 28px;
+            color: #7A7A7A;
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+}

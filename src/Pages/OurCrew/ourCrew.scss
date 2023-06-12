@@ -1,0 +1,12 @@
+.OurCrew{
+    overflow: hidden;
+    .Testimonials{
+        padding-bottom: 50px;
+        .buttons{
+            @media (max-width:767px) {
+                
+                bottom: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.Navbar{
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 40px);
+    transition: 0.5s;
+    @media (max-width:1050px) {
+        background-color: var(--scolor);
+    }
+    a.active{
+        color: var(--mcolor);
+    }
+    a{
+        color: white;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-evenly;
+        .icon{
+            font-size: 30px;
+            color: var(--mcolor);
+            display: none;
+            cursor: pointer;
+            @media (max-width:1050px) {
+                display: block;
+                max-width: 50%;
+            }
+        }
+        .item{
+            @media (max-width:1050px) {
+                display: none;
+            }
+            h4{
+                cursor: pointer;
+                font-size: 15px;
+                letter-spacing: 2px;
+                font-weight: 300;
+                text-align: center;
+                transition: 0.5s;
+                &:hover{
+                    color: var(--mcolor);
+                }
+            }
+        }
+        .image{
+            height: 50px;
+            min-width: 108px;
+        }
+        @media (max-width:1050px) {
+            flex: 1;
+        }
+    }
+    .vlist{
+        @media (min-width:1051px) {
+            display: none;
+        }
+        position: absolute;
+        width: 100%;
+        bottom: -200px;
+        transform: translateY(50%);
+        z-index: 3;
+        background-color: var(--scolor);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 20px;
+        h4{
+            font-weight: 500;
+            letter-spacing: 2px;
+            transition: 0.5s;
+            &:hover{
+                color: var(--mcolor);
+            }
+        }
+    }
+}
+.header-bg{
+    background-color: #c0a989ce !important;
+    .list{
+        .icon{
+            color: var(--scolor);
+        }
+        a.active{
+            color: var(--scolor);
+        }
+        h4{
+            &:hover{
+                color: var(--scolor) !important;
+            }
+        }
+    }
+}

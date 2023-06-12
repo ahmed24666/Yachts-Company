@@ -1,0 +1,81 @@
+.Offer{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    @media (max-width:767px) {
+        padding: 30px;
+    }
+    @media (max-width:950px) {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .left{
+        flex: 1;
+        min-width: 50%;
+        @media (max-width:950px) {
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            @media (max-width:950px) {
+                margin: auto;
+                width: 50%;
+            }
+            @media (max-width:767px) {
+                width:70%;
+            }
+            width: 90%;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 30px;
+        @media (max-width:950px) {
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:767px) {
+            gap: 20px;
+        }
+        .MainHead{
+            padding-top: 0;
+            justify-content: start !important;
+            @media (max-width:950px) {
+                justify-content: center !important;
+            }
+            h6{
+                color: var(--mcolor);
+            }
+            .text{
+                @media (max-width:950px) {
+                    text-align: center !important;
+                    align-items: center !important;
+                }
+                align-items: start;
+                text-align: start;
+            }
+        }
+        .line{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            .dot{
+                min-width: 10px;
+                height: 10px;
+                background-color: var(--scolor);
+                border: 3px solid var(--mcolor);
+            }
+            p{
+                font-weight: 300;
+                color: #7A7A7A;
+                line-height: 28px;
+                
+            }
+        }
+    }
+}

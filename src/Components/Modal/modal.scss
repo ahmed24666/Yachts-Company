@@ -1,0 +1,78 @@
+.Modal{
+    display: flex;
+    gap: 20px;
+    padding: 50px 100px 100px 100px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:1050px) {
+        flex-direction: column;
+    }
+    @media (max-width:767px) {
+        padding: 50px 30px;
+    }
+    .imageCon{
+        width: 400px;
+        height: 300px;
+        padding: 7px;
+        border: 1px solid var(--mcolor);
+        cursor: pointer;
+        @media (max-width:1050px) {
+            width: 50%;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imageCon2{
+        padding: 7px;
+        border: 1px solid var(--mcolor);
+        width: 800px;
+        height: 300px;
+        cursor: pointer;
+        @media (max-width:1050px) {
+            width: 50%;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .hide{
+        position: fixed;
+        width: 100%;
+        height: 120vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: -100px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0 ; 
+        gap: 20px;
+        .image{
+            width: 500px;
+            height: 500px;
+            @media (max-width:767px) {
+                width: 300px;
+                height: 300px;
+            }
+            @media (max-width:400px) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        .icon{
+            font-size: 30px;
+            color: var(--mcolor);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+.products{
+    display: flex;
+    padding: 100px;
+    gap: 20px;
+    direction: rtl;
+    @media (max-width:767px) {
+        direction: ltr;
+        padding: 30px;
+        flex-direction: column;
+    }
+    .left{
+        flex: 3;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        direction: ltr;
+        @media (max-width:950px) {
+            flex: 1;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .imageCon{
+                border: 1px solid var(--mcolor);
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover .hide{
+                    bottom: 0;
+                }
+                .image{
+                    margin: 7px;
+                    width: 230px;
+                    height: 320px;
+                    @media (max-width:767px) {
+                        width: 200px;
+                        height: 250px;
+                    }
+                    overflow: hidden;
+                    img{
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                .hide{
+                    position: absolute;
+                    bottom: -66px;
+                    width: calc(100% - 6px);
+                    height: 60px;
+                    background-color: var(--scolor);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 3px solid var(--mcolor);
+                    transition: 0.5s;
+                    cursor: pointer;
+                    .add{
+                        color: var(--mcolor);
+                    }
+                }
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: var(--mcolor);
+                }
+                h2{
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                }
+                h4{
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        @media (min-width:768px) {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+            overflow-y: scroll;
+            height: calc(100vh - 120px);
+            &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
+        }
+        h1{
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+        .price{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .sorting{
+                position: relative;
+                display: flex;
+                padding: 20px;
+                justify-content: space-evenly;
+                gap: 10px;
+                border-bottom: 2px solid var(--mcolor);
+                .doot{
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    bottom: -7px;
+                    left: 0;
+                    opacity: 0;
+                    border: 2px solid var(--mcolor);
+                    background-color: var(--scolor);
+                    transition: 0.5s;
+                    transform: translateX(-50%);
+                }
+                .show{
+                    left: 50% !important;
+                    opacity: 1 !important;
+                }
+            }
+            h5{
+                font-size: 17px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+        .category{
+            text-align: center;
+            border-top: 1px solid var(--mcolor);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .spans{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                flex-wrap: wrap;
+                @media (max-width:767px) {
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+                span{
+                    color: var(--mcolor);
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+            }
+        }
+        .image{
+            width: 200px;
+            border-top: 1px solid var(--mcolor);
+            padding-top: 20px;
+            @media (max-width:767px) {
+                display: none;
+            }
+        }
+        .follow{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-top: 1px solid var(--mcolor);
+            padding-top: 20px;
+            .icons{
+                display: flex;
+                gap: 5px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .icon{
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover{
+                        color: var(--mcolor);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.Services{
+    overflow: hidden;
+}
+.Logos{
+    padding-top: 100px;
+    @media (max-width:767px) {
+        padding-top: 30px;
+    }
+}
+.Offer{
+    padding: 0px 0 100px 100px;
+    background-color: var(--bg);
+    @media (max-width:950px) {
+        padding:0 100px 100px 100px;
+    }
+    @media (max-width:950px) {
+        padding: 30px;
+    }
+}
+.Company{
+    .text{
+        background-color: white;
+    }
+}
+

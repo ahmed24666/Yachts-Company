@@ -1,0 +1,144 @@
+.Single{
+    .none{
+        display: none;
+    }
+    .product{
+        display: flex;
+        gap: 50px;
+        padding: 100px;
+        @media (max-width:1050px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+        @media (max-width:767px) {
+            padding: 30px;
+        }
+        .left{
+            flex: 1;
+            @media (max-width:1050px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .image{
+                width: 95%;
+                overflow: hidden;
+                height: 500px;
+                @media (max-width:1050px) {
+                    width: 70%;
+                    height: 400px;
+                }
+                @media (max-width:767px) {
+                    width: 90%;
+                }
+                @media (max-width:500px) {
+                    width: 100%;
+                    height: 300px;
+                }
+                img{
+                    transition: 0.5s;
+                }
+                &:hover img{
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width:1050px) {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            h1{
+                font-size: 63px;
+                font-weight: 500;
+                @media (max-width:767px) {
+                    font-size: 40px;
+                }
+            }
+            .icons{
+                display: flex;
+                gap: 5px;
+                color: var(--mcolor);
+                font-size: 20px;
+            }
+            h4{
+                font-size: 25px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: black;
+            }
+            p{
+                font-weight: 300;
+                letter-spacing: 1px;
+                line-height: 24px;
+            }
+            .buttons{
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                @media (max-width:767px) {
+                    justify-content: space-evenly;
+                }
+                .num{
+                    display: flex;
+                    border: 1px solid var(--mcolor);
+                    .quantity{
+                        flex: 2;
+                        border: 1px solid var(--mcolor);
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 400;
+                    }
+                    .action{
+                        border: 1px solid var(--mcolor);
+                        flex: 1;
+                        .inc{
+                            padding: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-bottom: 1px solid var(--mcolor);
+                            cursor: pointer;
+                        }
+                        .dec{
+                            border-top: 1px solid var(--mcolor);
+                            padding: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .add{
+                    width: 200px;
+                    height: 75px;
+                    background-color: var(--scolor);
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.5s;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    @media (max-width:767px) {
+                        height: 75px;
+                    }
+                    &:hover{
+                        background-color: var(--mcolor);
+                        color: var(--scolor);
+                    }
+                }
+            }
+        }
+    }   
+}

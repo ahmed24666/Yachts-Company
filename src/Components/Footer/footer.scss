@@ -1,0 +1,50 @@
+.Footer{
+    padding: 100px;
+    background-color: var(--scolor);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media (max-width:767px) {
+        padding: 30px;
+    }
+    .top{
+        display: flex;
+        gap: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        @media (max-width:767px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            max-width: 200px;
+            img{
+                object-fit: contain !important;
+            }
+        }
+        p{
+            max-width: 50%;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 300;
+            @media (max-width:767px) {
+                max-width: 95%;
+            }
+        }
+    }
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
+        .icon{
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                color: var(--mcolor);
+            }
+        }
+    }
+}

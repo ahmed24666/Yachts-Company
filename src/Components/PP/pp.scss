@@ -1,0 +1,109 @@
+.PP{
+    background-color: var(--bg);
+    .ppCon{
+        padding: 50px 100px 100px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @media (max-width:1050px) {
+            flex-direction: column;
+            gap: 10px;
+            padding: 50px 30px;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            text-align: center;
+            @media (max-width:1050px) {
+                gap: 15px;
+                padding: 30px;
+            }
+            @media (max-width:767px) {
+                gap: 10px;
+                padding:15px;
+            }
+            h2{
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+            h1{
+                font-size: 70px;
+                font-weight: 500;
+            }
+            span{
+                color: #7A7A7A;
+                font-weight: 300;
+            }
+            p{
+                font-weight: 300;
+                line-height: 28px;
+                color: #7A7A7A;
+            }
+            
+            .view{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:hover .icon{
+                    transform: translateX(20px);
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                }
+                .icon{
+                    transition: 0.5s;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        } 
+        .itemCon{
+
+            border: 1px solid #b3b3b3;
+            .item{
+                border: 1px solid var(--scolor);
+                margin: 10px;
+            }
+        }   
+        .itemCon2{
+            border: 1px solid var(--mcolor);
+            .item{
+                border: 1px solid #b3b3b3;
+                padding: 70px 50px;
+                margin: 10px;
+                @media (max-width:767px) {
+                    padding: 30px;
+                }
+            }
+        }   
+    }
+    .images{
+        padding:0 100px 100px 100px;
+        display: flex;
+        gap:20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        @media (max-width:767px) {
+            padding:0 30px 30px 30px;
+        }
+        .image{
+            transition: 1s;
+            &:hover{
+                transform: translateY(-20px);
+            }
+            img{
+                object-fit: contain !important;
+            }
+        }
+    }
+}

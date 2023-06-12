@@ -1,0 +1,15 @@
+.Parallex{
+    height: 80vh;
+    @media (max-width:1050px) {
+        height: 90vh;
+    }
+}
+.MainHead{
+    .text{
+        h1{
+            @media (max-width:767px) {
+                font-size: 40px !important;
+            }
+        }
+    }
+}

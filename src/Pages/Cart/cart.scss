@@ -1,0 +1,157 @@
+.cartComponent{
+    padding: 100px;
+    .empty{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        font-weight: 500;
+        font-family: var(--fb);
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    @media (max-width:767px) {
+        padding: 30px;
+    }
+    .title{
+        display: flex;
+        font-size: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--mcolor);
+        gap: 15px;;
+        .product{
+            flex: 5;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            @media (max-width:767px) {
+                flex: 1;
+            }
+        }
+        .price{
+            flex: 1;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            @media (max-width:850px) {
+                    display: none;
+                }
+        }
+        .quantity{
+            flex: 2;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            @media (max-width:850px) {
+                    display: none;
+                }
+        }
+        .total{
+            flex: 1;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            @media (max-width:850px) {
+                    display: none;
+                }
+        }
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        .item{
+            display: flex;
+            padding: 20px 0;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid var(--mcolor);
+            @media (max-width:850px) {
+                flex-direction: column;
+            }
+            .details{
+                flex: 5;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                @media (max-width:850px) {
+                    flex-direction: column;
+                    justify-content: center;
+                    flex: 1;
+                }
+                .image{
+                    width: 120px;
+                    height: 120px;
+                }
+                h1{
+                    font-size: 23px;
+                    font-weight: 500;
+                    @media (max-width:767px) {
+                        text-align: center;
+                    }
+                }
+            }
+            p{
+                flex: 1;
+                color: #7A7A7A;
+                display: flex;
+                justify-content: center;
+            }
+            .count{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .button{
+                    font-size: 25px;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                .num{
+                    width: 40px;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid var(--mcolor);
+                }
+                .action{
+                    width: 40px;
+                    height: 70px;
+                    border: 1px solid var(--mcolor);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+                    .inc{
+                        cursor: pointer;
+                    }
+                    .dec{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .allprice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        gap: 20px;
+        h1{
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        p{
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    }
+}

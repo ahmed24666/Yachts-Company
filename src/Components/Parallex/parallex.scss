@@ -1,0 +1,75 @@
+.Parallex{
+    height: 70vh;
+    background-image: url('../../../public/image/home-1-parallax.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    h1{
+        color: white;
+        font-size: 80px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        @media (max-width:767px) {
+            font-size: 60px;
+        }
+        @media (max-width:400px) {
+            font-size: 40px;
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 5px;
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+        .btn1{
+            border: 1px solid white;
+            height: 60px;
+            width: 200px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--fs);
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.5s;
+            &:hover{
+                background-color: white;
+                color: var(--scolor);
+            }
+        }
+        .btn2{
+            border: 1px solid var(--mcolor);
+            background-color: var(--mcolor);
+            height: 60px;
+            width: 200px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--fs);
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.5s;
+            &:hover{
+                background-color: white;
+                color: var(--scolor);
+                border: 1px solid white;
+
+            }
+        }
+    }
+}

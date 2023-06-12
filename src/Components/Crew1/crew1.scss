@@ -1,0 +1,33 @@
+.Crew1{
+    padding: 50px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    @media (max-width:767px) {
+        padding: 50px 30px;
+    }
+    .imagecon{
+        border: 1px solid var(--mcolor);
+        .image{
+            width: 250px;
+            height: 250px;
+            margin: 7px;
+            &:hover{
+                animation: blur 1s ;
+            }
+            @keyframes blur {
+                0% {
+                    filter: blur(0px);
+                }
+                30% {
+                    filter: blur(2px);
+                }
+                100% {
+                    filter: blur(0px);
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.Logos{
+    padding:0 100px 100px 100px;
+    display: flex;
+    gap:20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @media (max-width:767px) {
+        padding:0 30px 30px 30px;
+    }
+    .image{
+        transition: 1s;
+        &:hover{
+            transform: translateY(-20px);
+        }
+        img{
+            object-fit: contain !important;
+        }
+    }
+}

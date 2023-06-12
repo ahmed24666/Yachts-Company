@@ -1,0 +1,80 @@
+.Testimonials{
+    padding: 50px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media (max-width:767px) {
+        padding: 20px 30px;
+    }
+    .cards{
+        width: 50%;
+        display: flex;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        @media (max-width:1050px) {
+            width: 70%;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        .card{
+            min-width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p{
+                color: #7A7A7A;
+                font-weight: 300;
+                line-height: 28px;
+            }
+            .name{
+                font-weight: 500;
+                h3{
+                    color: var(--scolor);
+                    font-size:23px;
+                    span{
+                        font-weight: 300;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .buttons{
+        position: absolute;
+        font-size: 30px;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        bottom: 50%;
+        transform: translateY(50%);
+        @media (max-width:1050px) {
+            width: 80%;
+        }
+        @media (max-width:767px) {
+            width: 97%;
+            bottom: 30px;
+        }
+        .btn{
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--scolor);
+            border-radius: 50%;
+            color: var(--scolor);
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                color: var(--mcolor);
+                background-color: var(--scolor);
+            }
+        }
+    }
+}
