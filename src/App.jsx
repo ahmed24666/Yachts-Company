@@ -18,9 +18,8 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const Layout=()=>{
-    const [isLoader, setIsLoader] = useState(false)
+    const [isLoader, setIsLoader] = useState(true)
     useEffect(() => {
-      setIsLoader(true)
       setTimeout(() => {
         setIsLoader(false)
       }, 4000);
